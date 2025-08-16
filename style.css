@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start off-screen */
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(180deg, #4b6cb7, #182848);
+    color: #f9f9f9; 
+    transition: left 0.3s ease;
+    padding-top: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar.active {
+    left: 0; /* Slide into view */
+}
+
+.sidebar .logo {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #ffdd57;
+}
+
+.sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .nav-links li {
+    margin: 10px 0;
+}
+
+.sidebar .nav-links li a {
+    text-decoration: none;
+    color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.sidebar .nav-links li a span {
+    margin-right: 12px;
+}
+
+.sidebar .nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #4b6cb7;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    z-index: 1000; /* stays above sidebar */
+}
+
+.toggle-btn:hover {
+    background-color: #3551a1;
+}
