@@ -10,3 +10,5 @@ A stylish collapsible sidebar built with HTML, CSS, and JavaScript.
 ## Usage
 1. Clone the repository
 2. Open `index.html` in your browser or use Live Server in VS Code
+
+**[🌐 View Live Demo Here](https://sedrah03.github.io/collapsible-sidebar/)**
